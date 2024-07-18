@@ -1,0 +1,11 @@
+Coleta de dados no Windows 
+-Comece com uma varredura básica.
+*Procure por portas tcp abertas com uma ferramenta como superscan.
+*Execute a enumeração de SO com LanGuard ou Nmap.
+
+Medidas defensivas.
+-Configurar um firewall de rede, bloqueia as portas de rede do windows como a RPC(135) e NetBios(137-139 e 445).
+-No windows server desabilite conexões anõnimas.
+
+NETBIOS (Network basic Input/Output System)
+NetBios permite que os aplicativos façam chamadas de rede e se comuniquem com outros hosts dentro de uma Lan.

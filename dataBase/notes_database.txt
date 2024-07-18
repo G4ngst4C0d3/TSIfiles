@@ -1,0 +1,138 @@
+
+========= CRIAÇÃO DE TABELAS ==================
+CREATE TABLE clientes (
+	cod_cliente INT PRIMARY KEY,
+	nome_cliente VARCHAR(20) NOT NULL,
+	sobrenome_cliente VARCHAR(40) NOT NULL,
+);
+CREATE TABLE produtos (
+	cod_produto iINT primary key,
+	nome_produto VARCHAR(30) NOT NULL,
+	descricao TEXT NULL				// Tipo TEXT aceita longa descrição e NULL pode ser deixado em branco.//
+	preco NUMERIC CHECK(preco > 0) NOT NULL 				//NUMERIC aceita casas decimais//
+qtde_estoque SMALLINT DEFAULT 0
+);
+CREATE TABLE pedidos (
+	cod_pedido SERIAL PRIMARY KEY,
+	cod_cliente INT NOT NULL REFERENCES clientes(cod_cliente),
+	cod_produto INT NOT NULL,
+	qtde SMALLINT NOT NULL,
+	FOREIGN KEY (cod_produto) REFERENCES produtos(cod_produto)
+);
+=================== INSERT ===========================
+INSERÇÃO DE REGISTROS NA TABELA (INSERT INTO)
+INSERT INTO produtos (cod_produto, nome_produto, descricao, preco, qtde_estoque)
+	VALUES (1, '8A7ABAHJS', 'HAOSQOH', 'ALKSLAK019209', 1233.22),
+nome_coluna
+
+* Ver o nome e os telefones de cada cliente em tabelas diferentes.
+
+========================== SELECT ============================
+SELECT	coluna FROM tabelas
+	CONDIÇÕES
+
+	SELECT clientes.nome AS clientela,
+  		fones_clientes.num_telefone AS whatsapp
+			FROM clientes, fones_clientes;
+
+
+========================== WHERE ======================================
+* A cláusula WHERE filtra por uma informação específica.
+SELECT nome, endereco, cpf, cnpj, TIPO_CLIENTE FROM clientes
+	WHERE tipo_cliente = 'J'
+		ORDER BY endereco DESC;
+
+*ORDER BY ASC ordena o resultado de forma ascendente DESC em ordem decrescente.
+
+*Buscar por informação específica 
+SELECT fornecedores.descricao, fornecedores.endereco AS localizacao 
+	FROM fornecedores
+		where endereco IN ('Marechal Deodoro');
+
+- Subconsultas sempre serão realizadas após a cláusula FROM.
+========================== BETWEEN ========================================
+* Comparação intervalo de dados
+
+SELECT  numero_nota, valor_total
+	FROM compras
+		WHERE valor_total BETWEEN 5000 and 7200 
+			ORDER BY valor_total DESC;
+
+
+
+========================= JUNÇÕES ======================================
+ INNER JOIN
+Para se obter dados provenientes de duas ou mais tabelas, deve ser escrita uma condição de junção
+na cláusula WHERE.
+SELECT tabela1.coluna1, tabela2.coluna2
+FROM tabela1, tabela2
+WHERE tabela1.coluna1 = tabela2.coluna2;
+
+
+Uma junção onde há uma condição de igualdade entre os atributos das tabelas (normalmente entre
+a chave primária de uma tabela e a chave estrangeira de outra tabela).
+
+
+A cláusula HAVING vem sempre depois da cláusula GROUP BY, sem uma cláusula GORUP BY  não pode existir uma cláusula HAVING.
+WHERE é usado para filtrar colunas específicas.
+
+HAVING é usado em agregações.
+
+============================================================ UPDATE =====================================================
+UPDATE clientes 
+	SET rg =  777
+		WHERE codcliente = 100;
+
+
+UPDATE clientes 
+	SET rg = 30809001, cpf = 18263435, cnpj = 2248588
+		WHERE codcliente = 104;
+
+
+=========================================================================================================================
+TRUNCATE TABLE = Limpa os registros de uma tabela
+TRUNCATE TABLE nomeTabela;
+=========================================================================
+RENOMEAÇÃO DE TABELA 
+ALTER TABLE nome-tabela
+	RENAME TO nome_nome;
+INCLUSÃO DE UMA COLUNA EM UMA TABELA
+ALTER TABLE nome-tabela	
+	ADD new_num_column INTEGER,
+	ADD new_text_column VARCHAR(30);
+
+=========================================================================================================================
+ARRAYS
+nome_coluna tipo []
+
+CREATE TABLE escalaTrabalho (
+	codFunc smallint,
+	escala char(3)[]
+);
+
+INSERT INTO escalaTrabalho(codFunc,escala)
+	VALUES 
+		(1,'{"SEG","TER","QUA"}'),
+		(2,'{"QUI","SEX","SAB"}');
+
+
+=========================================================================================================================
+
+
+Raiz quadrada e Raiz cúbica
+SELECT |/ 36 AS Resultado;
+SELECT ||/ 21 AS Resultado;
+
+===========================================================================================================================
+
+*************************************************** JUNÇÕES **************************************************************
+
+
+
+
+
+
+
+
+
+
