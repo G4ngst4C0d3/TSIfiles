@@ -133,6 +133,68 @@ SELECT ||/ 21 AS Resultado;
 
 
 
+============================================ FUNÇÕES DE AGREGAÇÃO =========================================================
+COUNT() conta o número de valores (conta todas as linhas incluindo os valores nulos)
+SUM() calcula a soma de uma coluna
+AVG() calcula a media de uma coluna
+MIN() encontra o valor mínimo de uma coluna
+MAX() encontra o valor máximo de uma coluna
+
+As funções de agregação ficam localizadas nas cláusulas SELECT E HAVING
+SELECT COUNT(*) AS total_linhas,
+	AVG(idade) AS media_idade
+		FROM my_table;
+
+SELECT regiao, MIN(idade), MAX(idade)
+	FROM my_table
+		GROUP BY regiao
+			HAVING MIN(idade) < 18;
+
+* As funções LEAST e GREATEST encontram o menor e o maior valor dentro de uma linha.
+
+
+RANDOM() essa função gera números aleatórios.
+
+CAST essa função é utilizada para converter tipos de dados.
+
+SELECT * FRM my_table
+	WHERE CAST(stringColuna AS DECIMAL) > 3; // essa consulta converteu os dados da coluna "stringColuna" em decimal.
+
+
+TRIM() remove os espaços a esquerda e a direita de uma string.
+
+CONCAT() usado para concatenar strings
+SELECT CONCAT(id, '_', name) AS id_name
+	FROM  my_table;
+
+ou (id || _ || name)
+
+
+SELCT CURRENT_DATE::VARCHAR;
+2024-08-08
+============================================================ GROUP BY ==========================================================================
+			* Agrupa os dados com base nos campos informados
+SELECT uf, COUNT(*) 
+	FROM clientes 
+		GROUP BY uf
+			HAVING COUNT(*) > 2;
+
+* where é uma filtragem feita em cima do select, enquanto o having é uma 
+	filtragem feita em cima do GROUP BY.
+
+*DISTINCT seleciona registros sem repetição segundo os campos especificados.
+	SELECT DISTINCT uf FROM clientes;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
