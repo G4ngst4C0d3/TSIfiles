@@ -187,8 +187,22 @@ SELECT uf, COUNT(*)
 
 
 
+========================================================= TO_CHAR ============================================
+escrever uma consulta que retorne a data atual no formato dia-mês ano:
+SELECT TO_CHAR(CURRENT_DATE, 'DD/MM/YYYY');
 
 
+============================================================ EXISTS =================================
+Testa a existência de registros em uma subconsulta.
+
+Quais as disciplinas que não têm nenhum pré-requisito?
+
+SELECT a.nome 
+	FROM disciplina a 
+		WHERE NOT EXISTIS (
+			SELECT * FROM prerequisito b
+				WHERE a.codDisciplina = b.codDisciplina
+		);
 
 
 
