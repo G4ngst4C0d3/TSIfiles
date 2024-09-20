@@ -1,0 +1,96 @@
+suKali Linux
+senha curso #kaligangsta34$%2023
+
+su root + senha
+
+->  sudo apt update -y && sudo apt -y upgrade && sudo apt autoremove -y
+
+-sudo apt-get update
+-sudo apt upgrade
+-install pacotes
+
+
+Para atualizar os pacotes instalados no sistema, basta digitar
+sudo apt-get -u upgrade
+sudo apt dist-upgrade  // atualiza o kernel
+sudo apt upgrade-y
+------------------------------------------------------------------------
+
+//ANONIMATO
+
+sudo apt install tor
+sudo service tor start
+sudo service tor status
+sudo nano /etc/proxychains4.conf
+descomentar o dynamic chain 
+e comentar o strict chain
+descomentar proxy dns requests
+copiar socks4 e criar socks5
+sudo nano /etc/proxychains4.conf
+proxychains4 firefox dnsleaktest.com
+---------------------------------------------------------------------------------
+
+//COMANDOS
+
+touch // cria arquivos
+cat // seleciona arquivo
+nano // edita o arquivo crtl + x  // salva o arquivo
+rm // deleta o arquivo 
+pwd  // mostra o caminho
+mkdir // cria pasta/diretório
+rm -r // apaga diretório e arquivos contidos nele
+sudo su ou sudo -i // privilégio de super usuário
+cp // copia arquivo
+exit resolve ou su - ou su - e nome do usuário // volta ao usuario normal
+pacotes .deb -> instalar com sudo dpkg -i + "nome do arquivo"
+uname -a //ver versão do SO
+para verificar se um serviço está rodando -> sudo systemctl status nessus.service
+
+
+///------FOOTPRINTING----------///
+
+sudo apt-get install wireshark
+
+
+dnsenum + url alvo
+dnsrecon + url alvo
+who.is // registro.br
+whois url do site
+
+ping bancocn.com
+host bancocn.com
+IDENTIFICAÇÃO DE FIREWWALLS 
+FERRAMENTA wafw00f
+
+-> buscar sub-domínios
+crt.sh
+dnsrecon -d "url" -t brt
+
+url/robots.txt
+
+
+NC netcat cria conexoes tcp udp envia requisições
+host + url -> pega ip
+nc + ip + porta
+header cabeçalho da requisição
+get / http/1.1
+
+
+PORTSCANNING
+->NMAP
+nmap + dns
+map + dns -p + porta -sV   -> identifica a versão do serviço que está rodando na porta.
+
+nmap 104.21.52.0-100 -sn   -> para saber os hosts ativos
+
+~----------------------------------------------
+SQLmap
+sqlmap -r "arquivo com a requisição e os parâmetros" 
+sqlmap  "arquivo com a requisição e os parâmetros" --dbs
+sqlmap  "arquivo com a requisição e os parâmetros" --T --C 
+sqlmap  "arquivo com a requisição e os parâmetros" --dbs
+sqlmap  -r "arquivo com a requisição e os parâmetros" --dump all
+
+
+
+

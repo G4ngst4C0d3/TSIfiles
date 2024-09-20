@@ -1,0 +1,2 @@
+* Trocar senha
+sudo su + senha -> passwd + "username"

@@ -1,0 +1,91 @@
+Ferramentas de análise de rede
+-superscan
+-nettools netsacan tools
+-nmap
+-cain & abel
+
+Criptografia :
+BitLocker Windows
+Veracripty
+
+Gerenciador de senha:
+Bitwarden
+
+analise redes sem fio
+-OmniPeek
+-Aircrack
+
+Principais Ferramentas 
+hidra
+BeEF
+Hydra
+Nessus
+Maltego
+backtrack 
+Brutus para quebrar senhas POP3
+
+Principais sites
+tryhackme
+hackerone
+hackthebox
+
+Extensões:
+d3coder
+hackbar
+
+---------------------------------------------------------------------------------------------------------------------------------------
+* Desabilitar trackin no google maps em configurações de privacidade
+
+
+Verificar se há virus pelo prompt
+https://pt.wikihow.com/Localizar-V%C3%ADrus-Usando-o-Comando-Attrib#:~:text=Digite%20attrib%20%2Dr%20%2Da%20%2Ds%20%2Dh%20*.&text=Qualquer%20arquivo%20leg%C3%ADtimo%20do%20sistema,na%20lista%20%22Acesso%20negado%22.
+
+attrib -r -a -s -h
+-----------------------------------------------------------------------------------------------------------------------------------------
+//FERRAMENTAS WINDOWS
+NETBIOS
+net  <nome_doComputador> /ADD -> adiciona contas de usuário após acesso remoto via metasploit
+netstat
+
+QualysGuard para testes de vulnerabilidades de rede/SO.
+
+Metasploit para explorar vulnerabilidades que ferramentas como Nessus descobrem.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+// LINUX //
+nmap -sV
+
+ataques de e-mail
+usar captcha
+--------------------------------------------------------------------------------
+Vulnerabilidades Web
+*ferramenta de quebra de senhas
+
+Para verificar se um aplicativo web é vulnerável basta digitar uma áspa simples ' nos campos de formulário ou final de uma url, se retornar um erro é provável que exista injeção de sql.
+
+* XSS 
+teste simples em campos de formulário
+<script> alert ('XSS') </script>
+
+<script>alert(document.cookie)</script
+
+
+
+ferramenta de quebra de login web -> Brutus
+
+=================================================================================
+	Competências
+
+-> Arquitetura de rede
+-> Segurança de Endpoints 
+-> Web Aplication Firewall
+
+==================================================================================
+Atualizar os programas pelo cmd
+winget upgrade  + enter
+winget upgrade --all  + enter
+
+
+===================================================================================
+
+
