@@ -1,0 +1,62 @@
+Boa tarde! Encaminho oportunidade de emprego na Lifemed Pelotas, caso conheçam interessados com perfil na área:
+
+
+ANALISTA DE INFRA ESTRUTURA
+
+ 
+
+Requisitos:
+
+- Estar cursando Ciência da Computação, Redes de Computadores, ou áreas afins;
+
+- Ter experiência anterior na área.
+
+ 
+
+Responsabilidades:
+
+- Realizar manutenções de rotinas de cópias de segurança;
+
+- Configurar e atualizar programas de antivírus;
+
+- Implementar, configurar e verificar serviços de Firewall, Routing & Switching;
+
+- Fazer Inventário de Ativos e manter este inventário;
+
+- Realizar manutenções de controle de acesso aos recursos de TI;
+
+- Mapear ameaças e mitigar riscos na infraestrutura interna;
+
+- Atuar em problemas de performance da infraestrutura interna;
+
+- Trabalhar com máquinas virtuais, virtualização de servidores (Windows e Linux);
+
+- Manter os Sistemas Operacionais atualizados;
+
+- Monitorar serviços de infraestrutura;
+
+- Realizar manutenções e atualizações preventivas em servidores, Firewall, VPN, rede e telefonia;
+
+- Manter atualizada a topologia de rede;
+
+- Configurar e manter atualizados roteadores e rede wireless;
+
+- Criar e manter VLANS;
+
+- Configurar softwares, impressoras e equipamentos;
+
+- Aplicar patches de segurança em sistemas e servidores;
+
+- Fazer interface direta com o cliente interno e externo;
+
+ 
+
+Para se candidatar:
+
+- Interessados deverão cadastrar o currículo através do link:
+
+https://bancodeprofissionais.vainorh.com.br/curriculo/cadastro
+
+- É necessário que o candidato faça o cadastro na vaga do seu interesse;
+
+- Prazo para cadastro: até o dia 04/10/2024
