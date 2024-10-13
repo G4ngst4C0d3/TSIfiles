@@ -15,3 +15,13 @@ git pull -> atualiza o repositório local de acordo com o repositório do github
     * CLONAR REPOSITÓRIO
 Entre na pasta para onde quer clonar o repositório. 
 Em seguida rode o comando com a url do repositório do github -> git clone https://github.com/AndersonPedrosoLeite/Curso-Java.git
+
+
+######################################################################################
+
+Branch
+
+git branch
+* mudar para branch git checkout nome-da-branch
+* criar uma nova branch e mudar para ela git checkout -b "nomeDaNovaBranch"
+atualizar a branch git pull origin "nomeDaBranch"
