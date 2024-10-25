@@ -16,6 +16,11 @@ git pull -> atualiza o repositório local de acordo com o repositório do github
 Entre na pasta para onde quer clonar o repositório. 
 Em seguida rode o comando com a url do repositório do github -> git clone https://github.com/AndersonPedrosoLeite/Curso-Java.git
 
+ git remote set-url origin https://github.com/G4ngst4C0d3/TSIfiles.git
+
+git remote -v
+
+
 
 ######################################################################################
 
